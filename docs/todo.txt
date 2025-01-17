@@ -1,0 +1,126 @@
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+# Datum Start hier einfügen !!!
+
+# TimeTracker Projekt - To-Do Liste
+
+## 1. Vorbereitung
+1. Projektantrag finalisieren und einreichen:
+   - [ ] Letzte Überprüfung des Antrags.
+   - [ ] Absprache mit dem Ausbilder.
+   - [ ] Einreichung bei der IHK.
+   - [ ] Genehmigung abwarten.
+
+2. GitHub-Repository einrichten:
+   - [x] Repository erstellen.
+   - [x] Lokale Entwicklungsumgebung einrichten.
+   - [x] Projekt initialisieren (z. B. `npm create-react-app timetracker`).
+   - [ ] `.gitignore` prüfen und anpassen.
+
+3. Entwicklungsumgebung konfigurieren:
+   - [ ] VS Code Extensions (Prettier, ESLint) installieren.
+   - [ ] Node.js und npm installieren (✅ falls bereits erledigt).
+   - [ ] Flask-Umgebung vorbereiten (Backend).
+
+4. Projektplanung und Aufgabenverteilung:
+   - [ ] Meilensteine festlegen.
+   - [ ] Zeitplan und Deadlines für jede Phase definieren.
+
+---
+
+## 2. Analyse (7 Stunden)
+1. Anforderungen klären:
+   - [ ] Zielgruppenanalyse durchführen.
+   - [ ] Funktionsanforderungen festlegen.
+   - [ ] Technische Anforderungen und Einschränkungen dokumentieren.
+
+2. Lastenheft erstellen:
+   - [ ] Überblick über Funktionen und Prozesse geben.
+   - [ ] Anforderungen an die Benutzeroberfläche skizzieren.
+
+---
+
+## 3. Entwurf (14 Stunden)
+1. Architektur entwerfen:
+   - [ ] Komponentenstruktur in React planen.
+   - [ ] Datenfluss zwischen Frontend und Backend definieren.
+   - [ ] Mockups für die Benutzeroberfläche erstellen.
+
+2. Datenbankdesign:
+   - [ ] Tabellenstruktur für SQLite entwerfen.
+   - [ ] API-Endpunkte für Flask skizzieren.
+
+3. Deployment-Plan:
+   - [ ] Lokale Testszenarien definieren.
+   - [ ] Produktionsumgebung vorbereiten.
+
+---
+
+## 4. Implementierung (28 Stunden)
+1. Frontend-Entwicklung:
+   - [ ] Komponenten in React erstellen.
+   - [ ] Dynamische Buttons für Ein-/Aus-Stempeln und Pausen.
+   - [ ] Statusanzeige und Echtzeit-Pausentimer umsetzen.
+   - [ ] Wochen- und Monatsübersicht implementieren.
+
+2. Backend-Entwicklung:
+   - [ ] Flask-API-Endpunkte entwickeln.
+   - [ ] SQLite-Datenbank einrichten.
+   - [ ] Verbindung zwischen Frontend und Backend testen.
+
+3. Fehlerbehandlung und Feedback-System:
+   - [ ] Toast-Nachrichten bei Aktionen implementieren.
+   - [ ] Validierungen für Eingaben hinzufügen.
+
+---
+
+## 5. Abnahme und Deployment (7 Stunden)
+1. Funktionstests durchführen:
+   - [ ] Frontend-Funktionen testen.
+   - [ ] Backend-API-Endpunkte testen.
+   - [ ] Integrationstests durchführen.
+
+2. Bereitstellung:
+   - [ ] Anwendung auf Testumgebung bereitstellen.
+   - [ ] Übergabe der Anwendung an den Endnutzer.
+
+---
+
+## 6. Dokumentation (14 Stunden)
+1. Technische Dokumentation:
+   - [ ] Architektur und Datenfluss dokumentieren.
+   - [ ] API-Dokumentation erstellen.
+
+2. Benutzerhandbuch:
+   - [ ] Anleitung zur Nutzung der App schreiben.
+   - [ ] Beispiele für typische Workflows beschreiben.
+
+3. Entwicklerdokumentation:
+   - [ ] Installationsanweisungen und Systemvoraussetzungen dokumentieren.
+   - [ ] Hinweise für zukünftige Erweiterungen hinzufügen.
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////

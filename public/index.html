@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Zeichencodierung der Webseite auf UTF-8 setzen -->
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <!-- 
+      Hier definierst du das Favicon, das kleine Icon, das im Tab deines Browsers angezeigt wird.
+      Statt der Standard .ico-Datei kannst du auch andere Bildformate wie .png oder .gif verwenden.
+      Stelle sicher, dass das Bild im "public"-Ordner abgelegt ist, damit es korrekt geladen wird.
+    -->
+    <link rel="icon" href="%PUBLIC_URL%/mylogo.png" />
+    
     <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      Das "viewport"-Meta-Tag sorgt dafür, dass die Webseite auf mobilen Geräten gut dargestellt wird.
+      Es setzt den Maßstab so, dass die Seite die Bildschirmgröße des Geräts berücksichtigt.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!--
+      "theme-color" ist ein Meta-Tag, das die Farbgestaltung des Browsers auf mobilen Geräten ändert.
+      Bei Android-Browsern zum Beispiel wird die Leiste oben (in der Regel die Statusleiste) in der hier
+      angegebenen Farbe dargestellt. 
+    -->
+    <meta name="theme-color" content="#000000" />
+    
+    <!--
+      Das Meta-Tag für die "description" beschreibt die Webseite. Es wird oft in Suchmaschinen-Ergebnissen
+      und als Vorschau angezeigt, wenn der Benutzer die Seite teilt.
+      Es kann auch für SEO (Suchmaschinenoptimierung) nützlich sein.
+    -->
+    <meta name="description" content="Time Tracker App" />
+    
+    <!--
+      Hier definierst du das "apple-touch-icon", das verwendet wird, wenn die Web-App auf einem iPhone oder iPad
+      zum Home-Bildschirm hinzugefügt wird. Dieses Icon wird dann auf dem Homescreen angezeigt.
+      Das Bild muss in der "public"-Verzeichnisstruktur vorhanden sein, wie hier im Beispiel "mylogo.png".
+    -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/mylogo.png" />
+    
+    <!--
+      Das Manifest ist eine wichtige Datei für Progressive Web Apps (PWA). 
+      Hier wird definiert, wie die Web-App auf dem Home-Bildschirm oder im Standalone-Modus aussieht, 
+      wenn sie wie eine native App gestartet wird.
+      Die "public"-Ordnerstruktur stellt sicher, dass das Manifest auch korrekt gefunden wird.
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
     <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+      Der Titel der Webseite, der im Browser-Tab angezeigt wird.
+      In deinem Fall hast du ihn auf "Time Tracker" gesetzt.
     -->
-    <title>React App</title>
+    <title>Time Tracker</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
     <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      Dieser Bereich zeigt eine Nachricht an, wenn der Benutzer JavaScript deaktiviert hat.
+      In modernen Web-Anwendungen wird fast immer JavaScript verwendet, daher ist es wichtig, diesen Hinweis
+      zu setzen, damit der Benutzer weiß, dass die Seite nicht richtig funktioniert, wenn JS ausgeschaltet ist.
+    -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!--
+      Der Hauptbereich der Web-App. Hier wird der React-Code durch den ReactDOM-Mechanismus 
+      in das "div"-Element mit der ID "root" gerendert.
+      Das ist der zentrale Einstiegspunkt für deine React-App.
+    -->
+    <div id="root"></div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+    <!--
+      Das HTML-Dokument endet hier, und der Bundled JS-Code von React wird hier eingebunden,
+      um die Anwendung zu starten (wird bei der Produktion eingebaut, nicht sichtbar im HTML).
     -->
   </body>
 </html>

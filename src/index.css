@@ -1,3 +1,4 @@
+/* Allgemeine Einstellungen für den gesamten Körper der Seite */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,186 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
+/* Stil für Codeblöcke, damit sie in einer monospaced-Schriftart angezeigt werden */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* App-Logo Styling */
+.App-logo {
+  height: 80px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Header der App */
+.App-header {
+  background-color: #4a90e2;
+  min-height: 20vh; /* Reduziert die Höhe des Headers */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(12px + 3vmin);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Header Content Layout */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger {
+  background-color: white;
+  height: 4px;
+  width: 30px;
+  margin: 5px 0;
+  transition: 0.3s ease;
+}
+
+.user-status {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* App Title */
+.app-title {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* Dropdown Menü */
+.menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #4a90e2; /* Menüfarbe geändert */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  min-width: 250px; /* Mindestbreite */
+  width: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  font-size: 18px; /* Schriftgröße für bessere Lesbarkeit */
+}
+
+/* Animation für das App-Logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main Section */
+.App-main {
+  min-height: 60vh; /* Mehr Platz für den Main Bereich */
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer */
+.App-footer {
+  background-color: #282c34;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.App-footer p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Responsivität */
+@media (max-width: 768px) {
+  .App-header {
+    min-height: 50vh;
+    flex-direction: column;
+  }
+
+  .App-logo {
+    height: 100px; /* Kleineres Logo bei mobilen Geräten */
+  }
+
+  .App-main {
+    padding: 1rem;
+    min-height: 65vh;
+  }
+
+  .menu {
+    width: 80%;
+    top: 100px; /* Position für kleine Bildschirme */
+    left: 50%;
+    transform: translateX(-50%); /* Horizontale Zentrierung */
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }

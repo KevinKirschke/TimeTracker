@@ -1,0 +1,50 @@
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+timetracker/
+├── docs/                     # Dokumentation und andere txt files
+├── node_modules/             # Abhängigkeiten (npm install)
+├── public/                   # Statische Dateien
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+├── src/                      # Quellcode für die Anwendung
+│   ├── assets/               # Statische Assets (Bilder, Logos etc.)
+│   │   └── logo.png
+│   ├── components/           # Wiederverwendbare Komponenten
+│   │   ├── Header/           # Header-Komponente
+│   │   │   ├── Header.js
+│   │   │   └── Header.css
+│   │   ├── Footer/           # Footer-Komponente
+│   │   │   ├── Footer.js
+│   │   │   └── Footer.css
+│   │   ├── TimeTracking/     # Zeit-Tracking-Komponenten
+│   │   │   ├── Timer.js
+│   │   │   ├── Timer.css
+│   │   │   ├── PauseManager.js
+│   │   │   └── PauseManager.css
+│   ├── context/              # React Context für State-Management
+│   │   └── TimeTrackerContext.js
+│   ├── hooks/                # Custom React-Hooks
+│   │   ├── useTimer.js
+│   │   └── useAuth.js
+│   ├── pages/                # Seiten der Anwendung
+│   │   ├── Login/            # Login-Seite
+│   │   │   ├── Login.js
+│   │   │   └── Login.css
+│   │   ├── Dashboard/        # Hauptübersicht (Dashboard)
+│   │   │   ├── Dashboard.js
+│   │   │   └── Dashboard.css
+│   ├── styles/               # Globale Styles
+│   │   ├── variables.css     # CSS-Variablen
+│   │   └── global.css        # Globale Style-Regeln
+│   ├── utils/                # Hilfsfunktionen
+│   │   ├── dateUtils.js
+│   │   └── validation.js
+│   ├── App.js                # Hauptkomponente
+│   ├── index.js              # Einstiegspunkt der App
+│   └── index.css             # Globale CSS-Datei
+├── package.json              # Projektkonfiguration
+└── README.md                 # Benutzerhandbuch
+
+/////////////////////////////////////////////////////////////////////////////////////////
